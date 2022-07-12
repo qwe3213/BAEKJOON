@@ -12,8 +12,6 @@ function selfNumber(){
             dn=n+(Math.floor(n/100))+(Math.floor((n%100)/10))+(n%10);
         }else if(1000<=n && n<10000){
             dn=n+(Math.floor(n/1000))+(Math.floor((n%1000)/100))+(Math.floor((n%100)/10))+(n%10)
-        }else{
-            dn=10001;
         }
         arr.push(dn);
     }
