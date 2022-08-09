@@ -15,7 +15,7 @@ let sum=0;
     inner: for(let j=2; j*j<=i; j++){
             if(i % j===0){
                 continue outer;
-                 }
+                 }console.log(i)
             }
             arr.push(i)
         } 
