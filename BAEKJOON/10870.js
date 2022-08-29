@@ -2,17 +2,13 @@ const fs = require('fs');
 const filePath = process.platform === 'linux' ? '/dev/stdin' : './input.txt';
 let input = fs.readFileSync(filePath).toString().trim().split('\n');
 let n = Number(input[0]);
-let arr = [0,1];
 
-function R(n,arr) {
-    let len = arr.length;
-    if(len === n+1) {
-        console.log(sum);
-        return 1;
+function fibonacci(n) {
+
+    if (n < 2) {
+      return n; //2보다 작은 수는 그 값을 리턴하므로 조건을 생성
     } else {
-        sum = arr[len-1] + arr[len-2];
-        arr.push(sum);
-        return R(n, arr);
+      return fibonacci(n - 1) + fibonacci(n - 2);
     }
 }
-R(n,arr);
+console.log(fibonacci(n));
