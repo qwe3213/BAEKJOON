@@ -13,7 +13,7 @@
 // console.log(solution(3, a));
 // 위의 코드처럼 풀어 보았는데 이렇게 풀게 되면 NAN이 3개나와서 지우고 최대값을 구하는데 답이 나오긴함 그러나 만약 3일의합이아닌 1000일의합을 구하라하면 NAN이 1000개가 나와 길이가 몹시 길어짐...
 function solution(k, arr){
-    let answer= 0;
+    
     let sum = 0;
     for(let i = 0; i<k; i++){
        sum+=arr[i];

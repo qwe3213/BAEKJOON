@@ -9,6 +9,7 @@ function solution(board, moves) {
         if (tmp === arr[arr.length - 1]) {
           arr.pop();
           count += 2;
+          break
         } else arr.push(tmp);
         break;
       }

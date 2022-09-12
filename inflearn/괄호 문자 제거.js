@@ -5,6 +5,7 @@ function solution(s) {
     if (x === ")") {
       while (stack.pop() !== "(");
     } else stack.push(x);
+    console.log(stack);
   }
   answer = stack.join("");
   return answer;
