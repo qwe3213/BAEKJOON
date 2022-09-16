@@ -25,3 +25,13 @@ let arrr= []
   
   let arr = [13, 5, 11, 7, 23, 15];
   console.log(solution(arr));
+
+  
+// function solution(arr){
+//    arr.sort(function(a,b){
+//        return a-b;
+//    })
+//    console.log(arr);
+// }
+// let arr = [13, 5, 11, 7, 23, 15];
+// console.log(solution(arr));
